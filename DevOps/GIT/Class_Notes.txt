@@ -1413,7 +1413,231 @@ Day - 11 | 16th Apr. 2026
 	
 	
 	
-	
+  922  cd ..
+  923  clear
+  924  ls
+  925  mkdir demorepo1
+  926  cd demorepo1/
+  927  clear
+  928  git init
+  929  clear
+  930  echo "rec1" >> s1.txt
+  931  git add .
+  932  git commit -m "cm1"
+  933  echo "rec1" >> s2.txt
+  934  git add .
+  935  git commit -m "cm2"
+  936  clear
+  937  git log -online
+  938  git log --oneline
+  939  ls
+  940  git branch feature1
+  941  git branch feature2
+  942  clear
+  943  git log --oneline
+  944  git switch feature1
+  945  ls
+  946  git log --oneline
+  947  echo "rec1" >> q1.txt
+  948  git add .
+  949  git commit -m "f1cm1"
+  950  echo "rec1" >> q2.txt
+  951  git add .
+  952  git commit -m "f1cm2"
+  953  echo "rec1" >> q2.txt
+  954  git add .
+  955  git commit -m "f1cm3"
+  956  echo "rec1" >> q3.txt
+  957  git add .
+  958  git commit -m "f1cm4"
+  959  clear
+  960  ls
+  961  git status
+  962  git log --oneline
+  963  git rebase master
+  964  git switch master
+  965  git merge feature1
+  966  clear
+  967  git log --oneline
+  968  ls
+  969  git switch feature2
+  970  git log --oneline
+  971  ls
+  972  echo "rec1" >> l1.txt
+  973  git add .
+  974  git commit -m "f2cm1"
+  975  echo "rec1" >> l2.txt
+  976  git add .
+  977  git commit -m "f2cm2"
+  978  echo "rec1" >> l3.txt
+  979  git add .
+  980  git commit -m "f2cm3"
+  981  ls
+  982  echo "rec1" >> l4.txt
+  983  git add .
+  984  git commit -m "f2cm4"
+  985  echo "rec1" >> l5.txt
+  986  git add .
+  987  git commit -m "f2cm5"
+  988  git log --oneline
+  989  ls
+  990  git rebase master
+  991  git log --oneline
+  992  ls
+  993  git switch master
+  994  git log --oneline
+  995  git merge feature2
+  996  git log --oneline
+  997  git switch feature1
+  998  git log --oneline
+  999  git rebase master
+ 1000  git log --oneline
+ 1001  git rebase feature2
+ 1002  clear
+ 1003  git log --oneline
+ 1004  git status
+ 1005  echo "rec1" >> e1.txt
+ 1006  git add .
+ 1007  git commit -m "f1cm1"
+ 1008  echo "rec1" >> e2.txt
+ 1009  git add .
+ 1010  git commit -m "f1cm2"
+ 1011  echo "rec1" >> e3.txt
+ 1012  git add .
+ 1013  git commit -m "f1cm3"
+ 1014  echo "rec1" >> e4.txt
+ 1015  git add .
+ 1016  git commit -m "f1cm4"
+ 1017  echo "rec1" >> e5.txt
+ 1018  git add .
+ 1019  git commit -m "f1cm5"
+ 1020  echo "rec1" >> e5.txt
+ 1021  git add .
+ 1022  git commit -m "f1cm6"
+ 1023  clear
+ 1024  git log --oneline
+ 1025  ls
+ 1026  git rebase master
+ 1027  git switch master
+ 1028  git merge --squash feature1
+ 1029  git status
+ 1030  git commit -m "feature1_changes"
+ 1031  git log --oneline
+ 1032  ls
+ 1033  git show 0013f94
+ 1034  clear
+ 1035  ls
+ 1036  git status
+ 1037  git log --oneline
+ 1038  clear
+ 1039  git switch feature1
+ 1040  git status
+ 1041  git log --oneline
+ 1042  clear
+ 1043  git rebase master
+ 1044  cd ..
+ 1045  ls
+ 1046  mkdir demorepo2
+ 1047  clear
+ 1048  cd demorepo2/
+ 1049  git init
+ 1050  echo "rec1" >> q1.txt
+ 1051  git add .
+ 1052  git commit -m "cm1"
+ 1053  clear
+ 1054  git switch -c feature1
+ 1055  git log --oneline
+ 1056  ls
+ 1057  echo "rec1" >> w1.txt
+ 1058  git status
+ 1059  git switch master
+ 1060  ls
+ 1061  git status
+ 1062  git switch feature1
+ 1063  git status
+ 1064  ls
+ 1065  git add .
+ 1066  git status
+ 1067  git switch master
+ 1068  git status
+ 1069  git status
+ 1070  git switch feature1
+ 1071  ls
+ 1072  git stash list
+ 1073  git stash save "created for w1.text file"
+ 1074  git stash list
+ 1075  ls
+ 1076  git status
+ 1077  ls
+ 1078  echo "rec1" >> t1.txt
+ 1079  git add .
+ 1080* git stash save "for t.txt"
+ 1081  echo "rec1" >> t2.txt
+ 1082  git add .
+ 1083  git stash save "for t2.txt"
+ 1084  echo "rec1" >> t3.txt
+ 1085  git add .
+ 1086  git stash save "for t3.txt"
+ 1087  echo "rec1" >> t4.txt
+ 1088  git add .
+ 1089  git stash save "for t4.txt"
+ 1090  echo "rec1" >> t5.txt
+ 1091  git add .
+ 1092  git stash save "for t5.txt"
+ 1093  echo "rec1" >> t6.txt
+ 1094  git add .
+ 1095  git stash save "for t6.txt"
+ 1096  echo "rec1" >> t7.txt
+ 1097  git add .
+ 1098  git stash save "for t7.txt"
+ 1099  clear
+ 1100*
+ 1101  echo "rec1" >> t8.txt
+ 1102  git add .
+ 1103  git stash save "for t8.txt"
+ 1104  git stash list
+ 1105  ls
+ 1106  git stash apply
+ 1107  git status
+ 1108  ls
+ 1109  git commit -m "created t8.txt"
+ 1110  ls
+ 1111  git status
+ 1112  git stash list
+ 1113  git stash drop
+ 1114  git stash list
+ 1115  git stash apply stash@{5}
+ 1116  git commit -m "created t2.txt"
+ 1117  git status
+ 1118  ls
+ 1119  git stash list
+ 1120  git stash drop stash@{5}
+ 1121  git stash list
+ 1122  git stash pop
+ 1123  git stash list
+ 1124  ls
+ 1125  git status
+ 1126  git commit -m "asdf"
+ 1127  clear
+ 1128  git status
+ 1129  git stash list
+ 1130  ls
+ 1131  git stash pop stash@{3}
+ 1132  git stash list
+ 1133  git commit -m "A'
+"
+ 1134  clear
+ 1135  git stash lsit
+ 1136  clear
+ 1137  git stash list
+ 1138  git stash clear
+ 1139  git stash list
+ 1140  cd..
+ 1141  cd ..
+ 1142  history
+
+
+
 	- Working with Remote Repositories ::::
 	
 		- GitHub/Azure Repository/GitLab/Bitbucket
